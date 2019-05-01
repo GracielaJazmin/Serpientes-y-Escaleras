@@ -24,10 +24,12 @@ document.getElementById('lanzar').addEventListener('click',function(){
 	}
 })
 
+var dado = new Dado();
+var random = dado.lanzar()
+console.log((random))
 
 
-
-/*var dado = new Dado();
+/*
 
 function agregarjugador(){
 let player1 = new Jugador(document.getElementById('jugador1').value);
