@@ -23,6 +23,7 @@ document.getElementById('lanzar').addEventListener('click',function(){
 })
 
 document.getElementById('lanzar').addEventListener('click',lanzardado1)
+
 function lanzardado1(){
 var dado = new Dado();
 var random = dado.lanzar()
