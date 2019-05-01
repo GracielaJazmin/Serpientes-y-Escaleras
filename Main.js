@@ -27,6 +27,8 @@ function lanzardado1(){
 var dado = new Dado();
 var random = dado.lanzar()
 console.log(random)
+ var status = document.getElementById('Numero')
+ status.innerHTML = random
 }
 
 document.getElementById('lanzar2').addEventListener('click',lanzardado2)
@@ -34,6 +36,8 @@ function lanzardado2(){
 var dado2 = new Dado();
 var random = dado2.lanzar()
 console.log((random))
+var status = document.getElementById('Numero2')
+status.innerHTML = random
 }
 
 
