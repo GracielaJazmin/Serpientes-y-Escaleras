@@ -22,9 +22,19 @@ document.getElementById('lanzar').addEventListener('click',function(){
 	}
 })
 
-var dado = new Dado();
+document.getElementById('lanzar').addEventListener('click',lanzardado1)
+function lanzardado1(){
+	var dado = new Dado();
 var random = dado.lanzar()
 console.log((random))
+}
+
+document.getElementById('lanzar2').addEventListener('click',lanzardado2)
+function lanzardado2(){
+	var dado2 = new Dado();
+var random = dado2.lanzar()
+console.log((random))
+}
 
 
 
