@@ -4,5 +4,4 @@ class Dado{
     }
 
     
-    
 }console.log(this.lanzar);
