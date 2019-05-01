@@ -1,15 +1,27 @@
 document.getElementById('agregar').addEventListener('click',jugar)
 
+var turno = 1
+var jugador1, jugador2
+
 function jugar(){
 	nombre_jugador1= document.getElementById('jugador1').value
 	nombre_jugador2= document.getElementById('jugador2').value
 
-	var jugador1 = new Jugador(nombre_jugador1)
-	var jugador2 = new Jugador(nombre_jugador2)
+	jugador1 = new Jugador(nombre_jugador1)
+	jugador2 = new Jugador(nombre_jugador2)
 
-	var turno1 = 1
+	
 }
 
+
+document.getElementById('lanzar').addEventListener('click',function(){
+	if (turno == 1){
+		turno = 2;
+	}
+	else if(turno == 2){
+		turno = 1;
+	}
+})
 
 
 
