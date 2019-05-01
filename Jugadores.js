@@ -8,8 +8,8 @@ class Jugador {
         return this.nombre
     }
 
-    set obenernombre(obenernombre){
-        this.nombre = obenernombre
+    set posicion(nuevaPosicion){
+        this.nombre = nuevaPosicion
     }
 
     jugar(dado) {

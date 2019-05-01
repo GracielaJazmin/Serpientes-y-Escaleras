@@ -18,7 +18,7 @@ function jugar(){
 	}
 
 
-	var turno2 = 
+
 }
 
 
