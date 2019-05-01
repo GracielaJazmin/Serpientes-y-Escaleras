@@ -1,7 +1,20 @@
-var dado = new Dado();
+document.getElementById('agregar').addEventListener('clic',jugar)
 
-var player1 = new Jugador();
-var player2 = new Jugador();
+function jugar (){
+	jugador1= document.getElementById('jugador1').value
+	jugador2= document.getElementById('jugador2').value
+}
+
+
+
+/*var dado = new Dado();
+
+function agregarjugador(){
+let player1 = new Jugador(document.getElementById('jugador1').value);
+let player2 = new Jugador(document.getElementById('jugador2').value);
+dado.lanzar(player1)
+dado.lanzar(player2)
+}
 
 
 function jugador1()
@@ -16,3 +29,4 @@ function jugador2()
 
 document.getElementById('jugador1').addEventListener('click',jugador1);
 document.getElementById('jugador2').addEventListener('click',jugador2);
+*/
