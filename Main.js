@@ -1,4 +1,4 @@
-document.getElementById('agregar').addEventListener('clic',jugar)
+document.getElementById('agregar').addEventListener('click',jugar)
 
 function jugar(){
 	jugador1= document.getElementById('jugador1').value
