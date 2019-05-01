@@ -13,8 +13,6 @@ function jugar(){
 	
 }
 
-
-
 document.getElementById('lanzar').addEventListener('click',function(){
 	if (turno == 1){
 		turno = 2;
@@ -27,6 +25,10 @@ document.getElementById('lanzar').addEventListener('click',function(){
 var dado = new Dado();
 var random = dado.lanzar()
 console.log((random))
+
+
+
+
 
 
 /*
