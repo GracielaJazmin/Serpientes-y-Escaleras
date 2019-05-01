@@ -31,7 +31,7 @@ console.log(random)
 
 document.getElementById('lanzar2').addEventListener('click',lanzardado2)
 function lanzardado2(){
-	var dado2 = new Dado();
+var dado2 = new Dado();
 var random = dado2.lanzar()
 console.log((random))
 }
