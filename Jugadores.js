@@ -4,11 +4,11 @@ class Jugador {
         this.posicion = 0;
     }
 
-    get obtener(){
+    get_obtener(){
         return this.nombre
     }
 
-    set posicion(nuevaPosicion){
+    set_posicion(nuevaPosicion){
         this.posicion += nuevaPosicion
     }
 
