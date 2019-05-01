@@ -1,8 +1,11 @@
 document.getElementById('agregar').addEventListener('clic',jugar)
 
-function jugar (){
+function jugar(){
 	jugador1= document.getElementById('jugador1').value
 	jugador2= document.getElementById('jugador2').value
+
+	console.log(jugador1)
+	console.log(jugador2)
 }
 
 
