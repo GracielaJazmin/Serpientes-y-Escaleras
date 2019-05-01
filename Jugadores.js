@@ -1,6 +1,6 @@
 class Jugador {
-    constructor() {
-        this.Nojuagador = Nojuagador;
+    constructor(Nojugador) {
+        this.Nojugador = Nojugador;
         this.posicion = 0;
     }
 
