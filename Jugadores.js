@@ -9,7 +9,7 @@ class Jugador {
     }
 
     set posicion(nuevaPosicion){
-        this.nombre = nuevaPosicion
+        this.posicion += nuevaPosicion
     }
 
     jugar(dado) {

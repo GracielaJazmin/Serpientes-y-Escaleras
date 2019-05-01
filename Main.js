@@ -8,17 +8,6 @@ function jugar(){
 	var jugador2 = new Jugador(nombre_jugador2)
 
 	var turno1 = 1
-	var turno2 = 2
-	if (turno1 == 1) {
-		turno++
-	}
-
-	if(turno2 == 2){
-		turno--
-	}
-
-
-
 }
 
 
