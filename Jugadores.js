@@ -1,7 +1,15 @@
 class Jugador {
-    constructor(Nojugador) {
-        this.Nojugador = Nojugador;
+    constructor(nombre) {
+        this.nombre = nombre;
         this.posicion = 0;
+    }
+
+    get obtener(){
+        return this.nombre
+    }
+
+    set obenernombre(obenernombre){
+        this.nombre = obenernombre
     }
 
     jugar(dado) {

@@ -1,12 +1,14 @@
 document.getElementById('agregar').addEventListener('click',jugar)
 
 function jugar(){
-	jugador1= document.getElementById('jugador1').value
-	jugador2= document.getElementById('jugador2').value
+	nombre_jugador1= document.getElementById('jugador1').value
+	nombre_jugador2= document.getElementById('jugador2').value
 
-	console.log(jugador1)
-	console.log(jugador2)
+	var jugador1 = new Jugador(nombre_jugador1)
+	var jugador2 = new Jugador(nombre_jugador2)
 }
+
+
 
 
 
