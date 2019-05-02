@@ -10,13 +10,13 @@ class Jugador {
 
     set_posicion(nuevaPosicion){
         this.posicion += nuevaPosicion
+        document.getElementById("Numero").innerHTML = "Posicion actual" + this.posicion;
     }
 
     jugar(dado) {
-        this.posicion += dado
-        document.getElementById("").innerHTML = "";
-        this.movimiento(this.posicion)
-        return this.dado
+        this.set_posicion(dado);
+        //this.movimiento(this.posicion)
+        
     }
 
     movimiento(dado) {
@@ -61,17 +61,6 @@ class Jugador {
             console.log("Ganador");
         }
 
-    }
-
-    avanzar()
-    {
-        this.posicion +=10
-        this.movimiento(this.posicion)
-    }
-
-    retrocede(){
-        this.posicion -=5
-        this.movimiento(this.posicion)
     }
 
 }
