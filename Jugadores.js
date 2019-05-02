@@ -14,6 +14,7 @@ class Jugador {
 
     jugar(dado) {
         this.posicion += dado
+        document.getElementById("").innerHTML = "";
         this.movimiento(this.posicion)
         return this.dado
     }
