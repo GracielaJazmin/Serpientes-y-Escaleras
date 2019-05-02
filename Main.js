@@ -28,17 +28,14 @@ var dado = new Dado();
 var random = dado.lanzar()
 jugador1.set_posicion(random);
 console.log(random)
-// var status = document.getElementById('Numero')
- //status.innerHTML = random
 }
 
 document.getElementById('lanzar2').addEventListener('click',lanzardado2)
 function lanzardado2(){
 var dado2 = new Dado();
 var random = dado2.lanzar()
-console.log((random))
-var status = document.getElementById('Numero2')
-status.innerHTML = random
+jugador2.set_posicion2(random);
+console.log(random)
 }
 
 

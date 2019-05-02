@@ -10,47 +10,48 @@ class Jugador {
 
     set_posicion(nuevaPosicion){
         this.posicion += nuevaPosicion
-        document.getElementById("Numero").innerHTML = "Posicion actual" + this.posicion;
+        document.getElementById("Numero").innerHTML = "Posicion actual " + this.posicion;
     }
 
-    movimiento(dado) {
+    set_posicion2(nuevaPosicion){
+        this.posicion += nuevaPosicion
+        document.getElementById("Numero2").innerHTML = "Posicion actual " + this.posicion;
+    }
+
+    movimiento() {
         if (this.posicion == 5) {
-            this.avanzar(dado)
+            return this.posicion + 58
         }
 
         if (this.posicion == 14) {
-            this.avanzar(dado)
+            return this.posicion + 49
         }
 
         if (this.posicion == 53) {
-            this.avanzar(dado)
+            return this.posicion + 19
         }
         if (this.posicion == 64) {
-            this.avanzar(dado)
-        }
-
-        if (this.posicion == 5) {
-            this.avanzar(dado)
+            return this.posicion + 21
         }
 
         if (this.posicion == 38) {
-            this.retrocede(dado);
+            return this.posicion - 18
         }
 
-        if (this.posicion == 38) {
-            this.retrocede(dado);
+        if (this.posicion == 51) {
+            return this.posicion - 41
         }
 
         if (this.posicion == 76) {
-            this.retrocede(dado);
+            return this.posicion - 22
         }
 
         if (this.posicion == 91) {
-            this.retrocede(dado);
+            return this.posicion - 18
         }
 
 
-        if (this.posicion >= 100) {
+        if (this.posicion = 100) {
             this.posicion = 100;
             console.log("Ganador");
         }
