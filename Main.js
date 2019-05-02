@@ -26,6 +26,7 @@ document.getElementById('lanzar').addEventListener('click',lanzardado1)
 function lanzardado1(){
 var dado = new Dado();
 var random = dado.lanzar()
+jugador1.jugar(random);
 console.log(random)
  var status = document.getElementById('Numero')
  status.innerHTML = random
