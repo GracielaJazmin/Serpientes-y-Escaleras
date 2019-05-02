@@ -11,52 +11,53 @@ class Jugador {
     set_posicion(nuevaPosicion){
         this.posicion += nuevaPosicion
         document.getElementById("Numero").innerHTML = "Posicion actual " + this.posicion;
-        this.movimiento(this.posicion);
-        return this.posicion
+        if (this.posicion == 5) {
+        return this.posicion + 58
+        }
     }
 
     set_posicion2(nuevaPosicion){
         this.posicion += nuevaPosicion
         document.getElementById("Numero2").innerHTML = "Posicion actual " + this.posicion;
-        this.movimiento();
-        return this.posicion
+        if (this.posicion == 14) {
+           return this.posicion + 49
+         }
+ 
     }
 
-    
-
-    movimiento(suma) {
-        if (this.posicion = 5) {
-             suma = this.posicion + 58
+    movimiento(posicion) {
+        if (posicion == 5) {
+             return posicion + 58
         }
 
-        else if (this.posicion = 14) {
-            suma = this.posicion + 49
+        else if (posicion == 14) {
+            return posicion + 49
         }
 
-        else if (this.posicion = 53) {
-            suma =  this.posicion + 19
+        else if (posicion == 53) {
+            return  posicion + 19
         }
-        else if (this.posicion = 64) {
-            suma =  this.posicion + 21
-        }
-
-        else if (this.posicion = 38) {
-            suma =  this.posicion - 18
+        else if (posicion == 64) {
+            return  posicion + 21
         }
 
-        else if (this.posicion = 51) {
-            suma =  this.posicion - 41
+        else if (posicion == 38) {
+            return  posicion - 18
         }
 
-        else if (this.posicion = 76) {
-            suma =  this.posicion - 22
+        else if (posicion == 51) {
+            return  posicion - 41
         }
 
-        else if (this.posicion = 91) {
-            suma =  this.posicion - 18
+        else if (posicion == 76) {
+            return  posicion - 22
         }
 
-        else if (this.posicion = 100) {
+        else if (posicion == 91) {
+            return  posicion - 18
+        }
+
+        else if (posicion == 100) {
             console.log("Ganador");
         }
 
