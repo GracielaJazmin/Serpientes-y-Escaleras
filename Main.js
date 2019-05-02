@@ -28,8 +28,8 @@ var dado = new Dado();
 var random = dado.lanzar()
 jugador1.jugar(random);
 console.log(random)
- var status = document.getElementById('Numero')
- status.innerHTML = random
+// var status = document.getElementById('Numero')
+ //status.innerHTML = random
 }
 
 document.getElementById('lanzar2').addEventListener('click',lanzardado2)
