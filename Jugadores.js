@@ -13,12 +13,6 @@ class Jugador {
         document.getElementById("Numero").innerHTML = "Posicion actual" + this.posicion;
     }
 
-    jugar(dado) {
-        this.set_posicion(dado);
-        //this.movimiento(this.posicion)
-        
-    }
-
     movimiento(dado) {
         if (this.posicion == 5) {
             this.avanzar(dado)
