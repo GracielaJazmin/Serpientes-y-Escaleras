@@ -13,6 +13,15 @@ function jugar(){
 	
 }
 
+document.getElementById('agregar').addEventListener('click',function(){
+document.getElementById('dadojuga1').innerHTML = "Dado de: "+ jugador1
+document.getElementById('dadojuga2').innerHTML = "Dado de: "+ jugador2
+})
+
+
+
+
+
 document.getElementById('lanzar').addEventListener('click',function(){
 	if (turno == 1){
 		turno = 2;
@@ -37,7 +46,7 @@ function lanzardado2(){
 var dado2 = new Dado();
 var random = dado2.lanzar()
 jugador2.set_posicion2(random);
-jugador1.movimiento()
+jugador2.movimiento()
 console.log(random)
 document.getElementById('dado').innerHTML = random
 }
