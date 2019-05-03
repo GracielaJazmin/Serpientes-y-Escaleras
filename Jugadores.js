@@ -11,29 +11,27 @@ class Jugador {
     set_posicion(nuevaPosicion){
         this.posicion += nuevaPosicion
         document.getElementById("Numero").innerHTML = "Posicion actual " + this.posicion;
-        this.movimiento(nuevaPosicion)
     }
 
     set_posicion2(nuevaPosicion){
         this.posicion += nuevaPosicion
         document.getElementById("Numero2").innerHTML = "Posicion actual " + this.posicion;
-        this.movimiento(nuevaPosicion)
     }
 
     movimiento() {
         if (this.posicion == 5) {
-             this.posicion += 58
+             this.posicion += 53
         }
 
          if (this.posicion == 14) {
-            this.osicion += 49
+            this.posicion += 35
         }
 
          if (this.posicion == 53) {
             this.posicion += 19
         }
          if (this.posicion == 64) {
-            this.posicion += 21
+            this.posicion += 19
         }
 
          if (this.posicion == 38) {
@@ -45,15 +43,19 @@ class Jugador {
         }
 
          if (this.posicion == 76) {
-            this.posicion -= 22
+            this.posicion -= 21
         }
 
          if (this.posicion == 91) {
             this.posicion -= 18
         }
 
+        if (this.posicion == 97) {
+            this.posicion -= 36
+        }
+
          if (this.posicion == 100) {
-            console.log("Ganador");
+             console.log('GANASTE!!!!')
         }
 
     }

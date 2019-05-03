@@ -27,6 +27,7 @@ function lanzardado1(){
 var dado = new Dado();
 var random = dado.lanzar()
 jugador1.set_posicion(random);
+jugador1.movimiento()
 console.log(random)
 document.getElementById('dado').innerHTML = random
 }
@@ -36,6 +37,7 @@ function lanzardado2(){
 var dado2 = new Dado();
 var random = dado2.lanzar()
 jugador2.set_posicion2(random);
+jugador1.movimiento()
 console.log(random)
 document.getElementById('dado').innerHTML = random
 }
