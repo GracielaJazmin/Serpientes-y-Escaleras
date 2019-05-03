@@ -10,15 +10,9 @@ function jugar(){
 	jugador1 = new Jugador(nombre_jugador1)
 	jugador2 = new Jugador(nombre_jugador2)
 
-	
+	document.getElementById('dadojuga1').textContent = `Dado de: ${jugador1}`
+	document.getElementById('dadojuga2').textContent = `Dado de: ${jugador2}`
 }
-
-document.getElementById('agregar').addEventListener('click',function(){
-document.getElementById('dadojuga1').innerHTML = "Dado de: "+ jugador1
-document.getElementById('dadojuga2').innerHTML = "Dado de: "+ jugador2
-})
-
-
 
 
 
