@@ -11,12 +11,13 @@ class Jugador {
     set_posicion(nuevaPosicion){
         this.posicion += nuevaPosicion
         document.getElementById("Numero").innerHTML = "Posicion actual " + this.posicion;
-  
+        this.movimiento(nuevaPosicion)
     }
 
     set_posicion2(nuevaPosicion){
         this.posicion += nuevaPosicion
         document.getElementById("Numero2").innerHTML = "Posicion actual " + this.posicion;
+        this.movimiento(nuevaPosicion)
     }
 
     movimiento() {
